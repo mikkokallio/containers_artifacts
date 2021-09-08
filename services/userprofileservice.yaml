@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: userprofile-service
+spec:
+  type: NodePort
+  ports:
+  - port: 32013
+  selector:
+    app: userprofile
